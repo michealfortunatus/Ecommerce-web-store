@@ -1,14 +1,15 @@
 import React from 'react';
 import {client} from '../LIB/client';
 import {Product, FooterBanner, HeroBanner} from '../components';
+// import { createClient } from "next-sanity";
 
 const Home = ({products,bannerData}) => {
   return (
     <>
-      <HeroBanner heroBanner = {bannerData.length && bannerData[0]}/>
+      <HeroBanner heroBanner = {bannerData && bannerData[0]}/>
       <div className='products-heading'>
        <h2>Best Selling Products</h2>
-       <p>Speakers of many variations</p>
+       <p>Products you can trust.</p>
       </div>
 
       <div className='products-container'>
@@ -20,7 +21,9 @@ const Home = ({products,bannerData}) => {
   )
 };
 
-export const getserversideProps = async () =>{
+// const client = createClient();
+
+export const getServerSideProps = async () =>{
   const query = '*[_type == "product"]';
   const products = await client.fetch(query);
 

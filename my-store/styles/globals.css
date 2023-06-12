@@ -303,6 +303,7 @@ text-align: end;
   font-size: 30px;
   display: flex;
   gap: 10px;
+  cursor:pointer;
 }
  .cart-heading{
   display: flex;
@@ -613,6 +614,10 @@ margin-top: 160px;
 .success .description .email{
   margin-left: 5px;
   color: #f02d34;
+}
+.trademark{
+  color: #f02d34;
+
 }
 .product-max-qty{
   margin-top: 10px;
