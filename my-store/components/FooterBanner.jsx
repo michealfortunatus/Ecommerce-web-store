@@ -67,8 +67,9 @@
 
  import React from 'react';
  import Link from "next/link";
-//  import { urlFor } from '@/LIB/client';
-import { urlFor } from './LIB/client';
+ import { urlFor } from '@/LIB/client';
+// import { urlFor } from '../LIB/client';
+import Image from 'next/Image'
 
 
  const FooterBanner = ({ footerBanner }) => {
@@ -94,7 +95,8 @@ import { urlFor } from './LIB/client';
              </Link>
           )}
          </div>
-         {image && <img src={urlFor(image)} className="footer-banner-image" alt="Footer Banner" />}
+         {/* {image && <img src={urlFor(image)} className="footer-banner-image" alt="Footer Banner" />} */}
+         <Image src={urlFor(image)} className="footer-banner-image" alt="Footer Banner"/>
        </div>
      </div>
    );
