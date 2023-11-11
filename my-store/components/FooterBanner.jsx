@@ -69,7 +69,7 @@
  import Link from "next/link";
  import { urlFor } from '@/LIB/client';
 // import { urlFor } from '../LIB/client';
-import Image from 'next/Image'
+import Image from 'next/image'
 
 
  const FooterBanner = ({ footerBanner }) => {
@@ -90,7 +90,7 @@ import Image from 'next/Image'
           <h3>{midText}</h3>
           {product && <p>{product.desc}</p>}
            {product && (
-             <Link href={`/product/${product}`}>
+             <Link to={`/product/${product}`}>
                <button type="button">{buttonText}</button>
              </Link>
           )}

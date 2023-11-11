@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
 import { TiDeleteOutline } from 'react-icons/ti';
 import toast from 'react-hot-toast';
-import Image from 'next/Image'
+import Image from 'next/image'
 
 import { useStateContext } from '../context/statecontext';
 import { urlFor } from '../LIB/client';
@@ -49,7 +49,7 @@ const Cart = () => {
           <div className="empty-cart">
             <AiOutlineShopping size={150} />
             <h3>Your shopping bag is empty</h3>
-            <Link href="/">
+            <Link to="/">
               <button
                 type="button"
                 onClick={() => setShowCart(false)}

@@ -35,7 +35,7 @@ const ProductDetails = ({ product, products }) => {
                 key={i}
                 src={urlFor(item)}
                 className={i === index ? 'small-image selected-image' : 'small-image'}
-                onMouseEnter={() => setIndex(i)}
+                onMouseEnter={() => setIndex(i)} alt =""
               />
             ))}
           </div>

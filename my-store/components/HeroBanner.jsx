@@ -41,7 +41,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { urlFor } from '../LIB/client';
-import Image from 'next/Image'
+import Image from 'next/image'
 
 const HeroBanner = ({ heroBanner }) => {
   // if (!heroBanner) {
@@ -62,7 +62,7 @@ const HeroBanner = ({ heroBanner }) => {
         
 
         <div>
-         <Link href={`/product/${heroBanner.product}`}> 
+         <Link to={`/product/${heroBanner.product}`}> 
             <button type='button'>{heroBanner.buttonText}</button>
           </Link> 
 

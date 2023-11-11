@@ -30,7 +30,7 @@ const Success = () => {
             order@example.com
           </a>
         </p>
-        <Link href="/">
+        <Link to ="/">
           <button type="button" width="300px" className="btn">
             Continue Shopping
           </button>
